@@ -2,7 +2,6 @@
 using BildirimTestApp.Server.DTOs;
 using BildirimTestApp.Server.Models;
 using BildirimTestApp.Server.RateLimitingMiddleware;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,7 +22,7 @@ namespace BildirimTestApp.Server.Controllers
 
         //Rate limit uygulanmamasi istenen kullanici adlari txt dosyasindan okunur ve kayit altına alinir.
         [HttpPost]
-        public IActionResult RateLimitMuafKullaniciAdEkleTXT([FromForm] IFormFile file)
+        public IActionResult RateLimitMuafKullaniciAdEkleTXT(IFormFile file)
         {
             if (file != null && file.Length > 0)
             {
@@ -48,9 +47,10 @@ namespace BildirimTestApp.Server.Controllers
             return NotFound("Dosya boş veya yüklenemedi");
         }
 
+
         //Rate limit uygulanmasi istenen kullanici adlari txt dosyasindan okunur ve rate limit muaf kullanicilardan cikarilir.
         [HttpDelete]
-        public IActionResult RateLimitMuafKullaniciAdCikarTXT([FromForm] IFormFile file)
+        public IActionResult RateLimitMuafKullaniciAdCikarTXT(IFormFile file)
         {
             if (file != null && file.Length > 0)
             {

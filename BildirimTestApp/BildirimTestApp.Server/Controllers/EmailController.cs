@@ -1,8 +1,6 @@
 ﻿using BildirimTestApp.Server.Servisler.Mail;
 using BildirimTestApp.Server.Servisler.Mail.DTO;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.RateLimiting;
 
 namespace BildirimTestApp.Server.Controllers
 {

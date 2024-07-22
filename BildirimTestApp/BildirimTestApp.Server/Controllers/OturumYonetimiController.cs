@@ -1,7 +1,6 @@
 ﻿using BildirimTestApp.Server.Servisler.OturumYonetimi;
 using BildirimTestApp.Server.Servisler.OturumYonetimi.DTO;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BildirimTestApp.Server.Controllers

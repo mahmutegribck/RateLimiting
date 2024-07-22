@@ -1,6 +1,4 @@
-﻿using BildirimTestApp.Server.Models;
-using HandlebarsDotNet;
-using Microsoft.EntityFrameworkCore;
+﻿using HandlebarsDotNet;
 using Microsoft.EntityFrameworkCore.Design;
 
 namespace BildirimTestApp.Server.ScaffoldingDesignTimeServices

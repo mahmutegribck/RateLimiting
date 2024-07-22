@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace BildirimTestApp.Server.Models
+﻿namespace BildirimTestApp.Server.Models
 {
     public partial class SisBildirimIcerik
     {
